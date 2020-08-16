@@ -6,6 +6,9 @@
 .dark_shade-bg {
   background: #1f2041;
 }
+.dark_shade_50-color {
+  color: rgba(31,32,65,0.5);
+}
 .dark_shade_25-color {
   color: rgba(31,32,65,0.25);
 }
@@ -24,6 +27,8 @@ body {
 }
 .content {
   max-width: 1440px;
+  padding-top: 150px;
+  margin: 0 auto;
 }
 .nav_bar {
   margin-bottom: 67px;
@@ -39,8 +44,8 @@ body {
 }
 .colors_type_block {
   max-width: 1440px;
-  max-height: 100vh;
-  margin: 145px 191px 0 150px;
+  min-height: 100vh;
+  margin: 0px auto;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -58,6 +63,14 @@ body {
   align-items: center;
   width: 260px;
   margin-bottom: 20px;
+}
+.colors__block {
+  margin-top: 140px;
+  margin-left: 150px;
+}
+.colors_type_block__types {
+  margin-top: 140px;
+  margin-right: 190px;
 }
 .color_block {
   border-radius: 6px;
@@ -106,6 +119,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  align-items: baseline;
 }
 .types__name {
   width: 30px;
@@ -150,6 +164,51 @@ p {
 /* Dark 75% */
   color: rgba(31,32,65,0.75);
 }
-.grid {
+.grid__body {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid__item {
+  margin: 0px auto;
+}
+.item__block {
+  width: 320px;
+  margin-bottom: 20px;
+}
+.item__block-text {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+input {
+  width: 320px;
+  height: 44px;
+  background: #fff;
+  border: 1px solid rgba(31,32,65,0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31,32,65,0.25);
+  padding-left: 15px;
+  transition: 1s ease-out 0.3s;
+}
+input:focus,
+input:hover {
+  border: 1px solid rgba(31,32,65,0.5);
+  outline: none;
+  line-height: 24px;
+  color: rgba(31,32,65,0.75);
+  transition: 0.8s ease-out 0s;
+}
+.input__focused {
+  border: 1px solid rgba(31,32,65,0.5);
+  color: rgba(31,32,65,0.75);
 }

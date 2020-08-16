@@ -3,19 +3,30 @@
 
 //colors
 dark_shade = #1F2041
-dark_shade_75 = rgba(31, 32, 65, 0.75);
-dark_shade_50 = rgba(31, 32, 65, 0.50);
-dark_shade_25 = rgba(31, 32, 65, 0.25);
-dark_shade_5 = rgba(31, 32, 65, 0.05);
-.dark_shade-color 
-    color dark_shade
-.dark_shade-bg
-    background dark_shade
-.dark_shade_25-color
-    color dark_shade_25
-.dark_shade_25-bg
+dark_shade_75 = rgba(31, 32, 65, 0.75)
+dark_shade_50 = rgba(31, 32, 65, 0.50)
+dark_shade_25 = rgba(31, 32, 65, 0.25)
+dark_shade_5 = rgba(31, 32, 65, 0.05)
+.dark_shade-color //used
+    color dark_shade 
+.dark_shade-bg //used
+    background dark_shade 
+.dark_shade_50-color //used
+    color dark_shade_50 
+.dark_shade_25-color //used
+    color dark_shade_25 
+.dark_shade_25-bg //no used
     background dark_shade_25
 
+dark_shade_50-color =
+    color dark_shade_50 
+dark_shade_75-color =
+    color dark_shade_75 
+//types
+montserrat = 
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
 
 //main_rules
 .mr-0
@@ -29,6 +40,8 @@ body
     min-height 100vh
 .content
     max-width 1440px
+    padding-top 150px
+    margin 0 auto
 .nav_bar
     margin-bottom 67px
     position fixed
@@ -41,9 +54,9 @@ body
     margin-left 30px
 .colors_type_block
     max-width 1440px
-    max-height 100vh
-    margin 145px 191px 0 150px
-    //margin 0px auto
+    min-height 100vh
+    //margin 145px 191px 0 150px
+    margin 0px auto
     display -webkit-flex
     display -moz-flex
     display -ms-flex
@@ -60,8 +73,14 @@ body
     align-items center
     width 260px
     margin-bottom 20px
+.colors__block
+    margin-top: 140px
+    margin-left: 150px
+.colors_type_block__types
+    margin-top: 140px
+    margin-right: 190px
 .color_block
-    border-radius: 6px;
+    border-radius: 6px
     width 70px
     height 70px
     
@@ -85,14 +104,14 @@ body
 .green-block
     background #6FCF97
 .item__name
-    width: 159px;
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
+    width: 159px
+    font-family: Quicksand
+    font-style: normal
+    font-weight: bold
+    font-size: 19px
+    line-height: 29px
+    display: flex
+    align-items: center
 .types_block
     display -webkit-flex
     display -moz-flex
@@ -101,44 +120,79 @@ body
     display flex
     justify-content space-between
     margin-bottom 50px
+    align-items baseline
 .types__name
     width 30px
     margin-right 30px
 .types__text
     width 336px
 h1
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
+    font-family: Quicksand
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
     color dark_shade
     
 h2
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-family: Quicksand
+    font-style: normal
+    font-weight: bold
+    font-size: 19px
+    line-height: 24px
     color dark_shade
 h3
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
     color dark_shade
     /* identical to box height */
-    text-transform: uppercase;
+    text-transform: uppercase
 p
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    {montserrat}
+    font-size: 14px
+    line-height: 24px
     /* or 171% */
     /* Dark 75% */
     color: dark_shade_75
     
-.grid
+.grid__body
     display grid
+    grid-template-columns: 1fr 1fr 1fr
+.grid__item
+    margin 0px auto
+.item__block
+    width 320px
+    margin-bottom 20px
+.item__block-text
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flex
+    display -o-flex
+    display flex
+    justify-content space-between
+    margin-bottom 8px
+input
+    width: 320px
+    height: 44px
+    background: #FFFFFF
+    border: 1px solid dark_shade_25
+    box-sizing: border-box
+    border-radius: 4px
+    {montserrat}
+    font-size: 14px
+    line-height: 18px
+    color dark_shade_25
+    padding-left 15px
+    transition 1s ease-out .3s
+input:focus,input:hover
+    border: 1px solid dark_shade_50
+    outline none
+    line-height: 24px
+    {dark_shade_75-color}
+    transition .8s ease-out .0s
+.input__focused
+    border: 1px solid dark_shade_50
+    {dark_shade_75-color}
