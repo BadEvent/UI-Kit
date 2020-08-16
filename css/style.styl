@@ -1,15 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+//colors
+dark_shade = #1F2041
+dark_shade_75 = rgba(31, 32, 65, 0.75);
+dark_shade_50 = rgba(31, 32, 65, 0.50);
+dark_shade_25 = rgba(31, 32, 65, 0.25);
+dark_shade_5 = rgba(31, 32, 65, 0.05);
+.dark_shade-color 
+    color dark_shade
+.dark_shade-bg
+    background dark_shade
+.dark_shade_25-color
+    color dark_shade_25
+.dark_shade_25-bg
+    background dark_shade_25
+
+
+//main_rules
+.mr-0
+    margin 0 !important
+
 body
     background #E5E5E5
+    //max-width 1440px
+.wrapper
+    width 100%
+    min-height 100vh
+.content
+    max-width 1440px
 .nav_bar
     margin-bottom 67px
+    position fixed
+    top 0
+    left 0
 .nav_bar__logo
     width 48px
     height 48px
     margin-top 30px
     margin-left 30px
 .colors_type_block
-    margin 0 0 0 150px
+    max-width 1440px
+    max-height 100vh
+    margin 145px 191px 0 150px
+    //margin 0px auto
     display -webkit-flex
     display -moz-flex
     display -ms-flex
@@ -32,17 +66,20 @@ body
     height 70px
     
 .dark_shade_100-block
-    background: #1F2041;
+    background: dark_shade
 .dark_shade-text
-    color #1F2041
+    color dark_shade
+
+
+
 .dark_shade_75-block
-    background: rgba(31, 32, 65, 0.75);
+    background: dark_shade_75
 .dark_shade_50-block
-    background: rgba(31, 32, 65, 0.50);
+    background: dark_shade_50
 .dark_shade_25-block
-    background: rgba(31, 32, 65, 0.25);
+    background: dark_shade_25
 .dark_shade_5-block
-    background: rgba(31, 32, 65, 0.05);
+    background: dark_shade_5
 .purple-block
     background #BC9CFF
 .green-block
@@ -56,3 +93,52 @@ body
     line-height: 29px;
     display: flex;
     align-items: center;
+.types_block
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flex
+    display -o-flex
+    display flex
+    justify-content space-between
+    margin-bottom 50px
+.types__name
+    width 30px
+    margin-right 30px
+.types__text
+    width 336px
+h1
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color dark_shade
+    
+h2
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color dark_shade
+h3
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color dark_shade
+    /* identical to box height */
+    text-transform: uppercase;
+p
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    /* Dark 75% */
+    color: dark_shade_75
+    
+.grid
+    display grid
