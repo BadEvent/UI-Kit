@@ -230,7 +230,7 @@ input:focus,input:hover
     border: 1px solid dark_shade_50
     {dark_shade_75-color}
 .drop_down__block
-    width 320px
+	width 320px
 	position relative
 	display -webkit-inline-flex
 	display -moz-inline-flex
@@ -245,27 +245,30 @@ input:focus,input:hover
     font-weight: normal
     font-size: 24px
     line-height: 24px
+    margin 0px auto
     {dark_shade_75-color}
-    margin 0 auto
 .drop_down__ui_form
-    width 44px
-    height 44px
-    position absolute
-    display -webkit-inline-flex
-    display -moz-inline-flex
-    display -ms-inline-flex
-    display -o-inline-flex
-    display inline-flex
-    align-items center
+	width 44px
+	height 44px
+	left 275px
+	position absolute
+	display -webkit-inline-flex
+	display -moz-inline-flex
+	display -ms-inline-flex
+	display -o-inline-flex
+	display inline-flex
+	align-items center
+	cursor pointer
 .drop_down__list
-    position absolute
-    display none
-    width: 320px
-    height: 159px
-    background-color #fff
-    border: 1px solid rgba(31, 32, 65, 0.5)
-    box-sizing: border-box
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05) 
+	position absolute
+	display none
+	width: 320px
+	height: 159px
+	top 41px
+	background-color #fff
+	border 1px solid rgba(31, 32, 65, 0.5)
+	box-sizing border-box
+	box-shadow 0px 10px 20px rgba(31, 32, 65, 0.05) 
 .drop_down__block:hover > .drop_down__list
-    animation-fill-mode: forwards;
 	display block
+	z-index 1
