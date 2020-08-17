@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face
+  font-family: 'Material Icons'
+  font-style: normal
+  font-weight: 400
+  src: url(/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+
+.material-icons 
+  font-family: 'Material Icons'
+  font-weight: normal
+  font-style: normal
+  font-size: 24px  /* Preferred icon size */
+  display: inline-block
+  line-height: 1
+  text-transform: none
+  letter-spacing: normal
+  word-wrap: normal
+  white-space: nowrap
+  direction: ltr
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale
+  /* Support for IE. */
+  font-feature-settings: 'liga'
+
 
 //colors
 dark_shade = #1F2041
@@ -31,7 +63,9 @@ montserrat =
 //main_rules
 .mr-0
     margin 0 !important
-
+.hide
+    display none !important
+    
 body
     background #E5E5E5
     //max-width 1440px
@@ -196,3 +230,46 @@ input:focus,input:hover
 .input__focused
     border: 1px solid dark_shade_50
     {dark_shade_75-color}
+.drop_down__block
+    width 320px
+.drop_down__input
+    {dark_shade_75-color}
+.drop_down__icon
+    font-family: Material Icons
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 24px
+    {dark_shade_75-color}
+    margin 0 auto
+.drop_down__ui_form
+    display -webkit-inline-flex
+    display -moz-inline-flex
+    display -ms-inline-flex
+    display -o-inline-flex
+    display inline-flex
+    align-items center
+    position: relative
+    top: -44px
+    left: 276px
+    width: 44px
+    height: 44px
+
+.drop_down__list
+    position relative
+    display none
+    top -48px
+    width: 320px
+    height: 159px
+    background-color #fff
+    border: 1px solid rgba(31, 32, 65, 0.5)
+    box-sizing: border-box
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
+.drop_down__block:hover > .drop_down__list
+    cursor pointer
+    animation-fill-mode: forwards;
+    display inline-flex
+    display -webkit-inline-flex
+    display -moz-inline-flex
+    display -ms-inline-flex
+    display -o-inline-flex
