@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>UI Kit</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font_awesome.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
 </head>
@@ -258,19 +259,33 @@
            </div>
        </div> 
     </div>
-	<div class="wrapper">
-		<nav class="menu">
-			<div class="menu__logo"><img src="/img/Logo.png" alt=""></div>
-			<a href="" class="menu__item menu__item_active">О нас</a>
-			<a href="" class="menu__item">Услуги</a>
-			<a href="" class="menu__item">Вакансии</a>
-			<a href="" class="menu__item">Новости</a>
-			<a href="" class="menu__item">Соглашения</a>
-			
-			<a href="" class="menu__item log_in">войти</a>
-			<a href="" class="menu__item sign_in">зарегистрироваться</a>
+	<div class="wrapper wrapper-menu">
+		<div class="content">
+			<nav class="menu">
+				<div class="menu__container">
+					<div class="menu__logo">
+						<img src="/img/Logo.png" alt="">
+					</div>
+					<div class="menu__items">
+						<a href="" class="menu__item menu__item_active">О нас</a>
+						<a href="" class="menu__item menu__item_dropdown">Услуги</a>
+						<div class="menu__item_dropdown_icon">
+							<span class="material-icons drop_down__icon dark_shade_50-color">keyboard_arrow_down</span>
+						</div>
+						<a href="" class="menu__item">Вакансии</a>
+						<a href="" class="menu__item">Новости</a>
+						<a href="" class="menu__item menu__item_dropdown">Соглашения</a>
+						<div class="menu__item_dropdown_icon">
+							<span class="material-icons drop_down__icon dark_shade_50-color">keyboard_arrow_down</span>
+						</div>
+						
+						<a href="" class="menu__item log_in">войти</a>
+						<a href="" class="menu__item sign_in">зарегистрироваться</a>
+					</div>
+				</div>
 			
 		</nav>
+		</div>
 	</div>
 
       
